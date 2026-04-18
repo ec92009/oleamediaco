@@ -2,7 +2,7 @@ const translations = {
   en: {
     corridor: 'Malaga - Marbella corridor',
     eyebrow: 'Listing presentation that sells the visit',
-    hero_title: 'Help agents upgrade weak listings before they lose buyer attention.',
+    hero_title: 'Better photos, faster sales.',
     hero_lead: 'Olea Media Co improves real-estate listing performance with a 4-stage service model: from cleaning up existing photos to full physical staging and final photography.',
     hero_cta_primary: 'See the 4 stages',
     hero_cta_secondary: 'View pricing',
@@ -143,82 +143,12 @@ const translations = {
     cta_title: 'Empieza con un piloto de 3 anuncios en 30 días',
     cta_body: 'Comparte 3 anuncios y te proponemos la combinación de etapas, calendario y presupuesto.'
   },
-  fr: {
-    corridor: 'Corridor Malaga - Marbella',
-    eyebrow: "Une présentation d'annonces qui vend la visite",
-    hero_title: "Aidez les agences à améliorer les annonces faibles avant de perdre l'attention des acheteurs.",
-    hero_lead: 'Olea Media Co améliore la performance des annonces immobilières avec un modèle en 4 étapes : retouche de photos existantes, prise de vue sur place, staging virtuel et staging réel avec photos finales.',
-    hero_cta_primary: 'Voir les 4 étapes',
-    hero_cta_secondary: 'Voir les tarifs',
-    metric1_label: 'Zone',
-    metric1_value: 'Malaga -> Marbella',
-    metric2_label: 'Modèle',
-    metric2_value: '4 étapes de service',
-    metric3_label: 'Livrables',
-    metric3_value: 'Fichiers prêts à publier',
-    before_tag: 'Avant',
-    after_tag: 'Après',
-    badge_text: "Améliorations visuelles pour annonces d'agence",
-    review_badge: 'Apercu du Service',
-    review_text: "Services visuels concus pour ameliorer la qualite des annonces et la reponse des acheteurs.",
-    problem_title: 'Le problème',
-    problem_body: "Beaucoup d'annonces performent mal parce que les agents publient des photos sombres, déformées ou vides. Résultat : moins de contacts qualifiés et une première impression plus faible.",
-    solution_title: "L'offre",
-    solution_body: 'Un système par étapes pour que les agences choisissent la bonne intervention pour chaque bien : retouche économique, nouvelle prise de vue, staging virtuel ou staging réel complet.',
-    stages_eyebrow: 'Modèle de service',
-    stages_title: '4 étapes, un standard visuel unique',
-    s1_title: 'Retouche des Photos Existantes',
-    s1_desc: "Nous utilisons les photos actuelles de l'agent et améliorons lumière, couleur et verticales pour une amélioration visuelle rapide.",
-    s1_b1: 'Aucune visite sur place',
-    s1_b2: 'Délai rapide',
-    s1_b3: 'Idéal pour des annonces faibles mais exploitables',
-    s2_title: 'Nouvelle Séance Photo sur Place',
-    s2_desc: "Nous nous déplaçons sur place pour créer une nouvelle série de photos. Le propriétaire ou l'agent prépare le bien avant la séance.",
-    s2_b1: "Séance jusqu'à 90 minutes",
-    s2_b2: '20-30 images retouchées',
-    s2_b3: 'Livraison professionnelle prête pour portails',
-    s3_title: 'Staging Virtuel',
-    s3_desc: 'Création de versions aménagées de pièces clés pour aider les acheteurs à se projeter et améliorer la performance sur les portails.',
-    s3_b1: 'Style selon le profil acheteur',
-    s3_b2: 'Images avant/après',
-    s3_b3: 'Excellent complément aux Etapes 1 ou 2',
-    s4_title: 'Staging Réel + Séance Photo',
-    s4_desc: "Coordination d'un staging réel dans le bien puis photos du résultat final pour des annonces premium.",
-    s4_b1: 'Présentation à plus fort impact',
-    s4_b2: 'Positionnement premium',
-    s4_b3: 'Idéal pour biens haut de gamme ou lents',
-    pricing_eyebrow: 'Tarifs',
-    pricing_title: 'Tarification par étape (à partir de)',
-    p1_stage: 'Etape 1',
-    p1_title: 'Retouche photo',
-    p1_note: 'Selon le nombre et la qualité des images source.',
-    p2_stage: 'Etape 2',
-    p2_title: 'Nouvelle séance photo',
-    p2_note: "Le déplacement, la taille du bien et la fenêtre d'accès peuvent influencer le prix.",
-    p3_stage: 'Etape 3',
-    p3_title: 'Staging virtuel',
-    p3_note: 'Prix de base pour 3 pièces. Pièces supplémentaires sur devis.',
-    p4_stage: 'Etape 4',
-    p4_title: 'Staging réel + photos',
-    p4_note: "Le périmètre dépend du mobilier, de la main-d'oeuvre et des besoins de prise de vue.",
-    process_eyebrow: 'Fonctionnement',
-    process_title: 'Workflow simple pour agents',
-    pr1_title: "Partager l'annonce + choisir l'étape",
-    pr1_body: "Envoyez le lien de l'annonce ou les détails du bien et indiquez l'étape (ou la combinaison) souhaitée.",
-    pr2_title: 'Validation du périmètre et du planning',
-    pr2_body: "Nous confirmons les livrables, les délais, les besoins d'accès et le prix avant de commencer.",
-    pr3_title: "Exécution de l'étape (ou des étapes)",
-    pr3_body: 'Retouche, photographie, staging virtuel ou staging réel selon le package choisi.',
-    pr4_title: 'Livraison des fichiers prêts à publier',
-    pr4_body: 'Réception des fichiers finaux avec une checklist simple pour portails et réseaux sociaux.',
-    cta_eyebrow: 'Demarrer',
-    cta_title: 'Demarrez avec un pilote de 3 annonces en 30 jours',
-    cta_body: "Partagez 3 annonces et nous proposerons la bonne combinaison d'etapes, le delai et le devis."
-  }
 };
 
+const LANGS = ['en', 'es'];
+const LANG_FLAGS = { en: '🇬🇧', es: '🇪🇸' };
 let current = 'en';
-const langButtons = Array.from(document.querySelectorAll('.lang-flag[data-lang]'));
+const langToggleBtn = document.querySelector('[data-lang-toggle]');
 
 function applyLang(lang) {
   const dict = translations[lang];
@@ -228,18 +158,18 @@ function applyLang(lang) {
     const key = el.getAttribute('data-i18n');
     if (dict[key]) el.textContent = dict[key];
   });
-  langButtons.forEach((btn) => {
-    btn.classList.toggle('is-active', btn.dataset.lang === lang);
-    btn.setAttribute('aria-pressed', String(btn.dataset.lang === lang));
-  });
+  if (langToggleBtn) {
+    langToggleBtn.textContent = LANG_FLAGS[lang];
+    langToggleBtn.setAttribute('aria-label', lang === 'en' ? 'Switch to Spanish' : 'Switch to English');
+  }
   current = lang;
 }
 
-langButtons.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const next = btn.dataset.lang;
-    if (next && next !== current) applyLang(next);
+if (langToggleBtn) {
+  langToggleBtn.addEventListener('click', () => {
+    const next = LANGS[(LANGS.indexOf(current) + 1) % LANGS.length];
+    applyLang(next);
   });
-});
+}
 
 applyLang('en');

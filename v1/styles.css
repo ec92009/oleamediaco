@@ -24,18 +24,20 @@ a { color: inherit; }
 .header-actions { display: flex; align-items: center; gap: 10px; }
 
 /* UI elements */
-.version-switch, .theme-toggle, .lang-switch, .lang-flag {
+.theme-toggle, .lang-btn {
   display: inline-flex; align-items: center; justify-content: center;
   border: 1px solid var(--line);
-  padding: 8px 12px;
-  text-decoration: none;
-  font-weight: 600; font-size: 0.85rem;
+  width: 36px; height: 36px;
+  border-radius: 50%;
   background: var(--surface); color: var(--ink);
   cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+  flex-shrink: 0;
+  transition: background 150ms, border-color 150ms;
 }
-.version-switch a { padding: 0 4px; text-decoration: none; opacity: 0.6; }
-.version-switch a.is-active { opacity: 1; font-weight: 800; color: var(--brand); }
-.lang-flag.is-active { background: var(--brand); color: var(--on-brand); }
+.theme-toggle:hover, .lang-btn:hover { background: var(--surface-2, var(--surface)); }
+.theme-toggle svg { display: block; pointer-events: none; }
 
 /* Main structure */
 main { width: min(1200px, calc(100% - 40px)); margin: 40px auto; display: flex; flex-direction: column; gap: 40px; }
@@ -131,7 +133,7 @@ html[data-theme="dark"] body {
     radial-gradient(circle at 10% 20%, rgba(96, 165, 250, 0.15), transparent 40%),
     radial-gradient(circle at 90% 80%, rgba(192, 132, 252, 0.12), transparent 40%);
 }
-.site-header, .section-shell, .info-card, .stage-card, .price-card, .process-list li, .cta-card, .metric, .version-switch, .theme-toggle, .lang-switch, .lang-flag, .panel-badge {
+.site-header, .section-shell, .info-card, .stage-card, .price-card, .process-list li, .cta-card, .metric, .theme-toggle, .lang-btn, .panel-badge {
   background: var(--surface);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
