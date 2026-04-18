@@ -74,7 +74,7 @@ const translations = {
   es: {
     corridor: 'Corredor Málaga - Marbella',
     eyebrow: 'Presentación de anuncios que consigue visitas',
-    hero_title: 'Ayuda a las agencias a mejorar anuncios flojos antes de perder la atención del comprador.',
+    hero_title: 'Mejores fotos, ventas más rápidas.',
     hero_lead: 'Olea Media Co mejora el rendimiento de anuncios inmobiliarios con un modelo de 4 etapas: desde limpiar fotos existentes hasta staging real y fotografía final.',
     hero_cta_primary: 'Ver las 4 etapas',
     hero_cta_secondary: 'Ver precios',
