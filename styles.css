@@ -18,6 +18,10 @@ a { color: inherit; }
   position: sticky; top: 0; z-index: 50;
   display: flex; align-items: center; justify-content: space-between;
   padding: 12px 24px;
+  max-width: 1200px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .brand-block { display: flex; flex-direction: column; gap: 4px; }
 .brand { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; }
