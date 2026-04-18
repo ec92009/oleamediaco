@@ -88,10 +88,14 @@ main { max-width: 1200px; width: 100%; margin: 40px auto; padding: 0 20px; displ
   font-weight: 700;
   text-decoration: none;
   display: inline-flex; align-items: center; justify-content: center;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-align: center;
 }
 .hero-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 30px; }
 .metric { padding: 16px; }
-.hero-panel { position: relative; width: 100%; aspect-ratio: 4/3; min-height: 280px; }
+.hero-panel { position: relative; width: 100%; aspect-ratio: 4/3; }
 .hero-art{display:grid;gap:10px}
 .compare-toplabels{display:flex;justify-content:space-between;align-items:center;padding:0 4px}
 .compare-pill{display:inline-flex;align-items:center;justify-content:center;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.88);color:#0b0d11;font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
@@ -101,7 +105,7 @@ main { max-width: 1200px; width: 100%; margin: 40px auto; padding: 0 20px; displ
 .compare-after img{display:none;}
 .compare-divider { position: absolute; top:0; bottom:0; left: var(--split, 50%); width:2px; background: rgba(0,0,0,.86); box-shadow: 0 0 0 1px rgba(255,255,255,.75); transform: translateX(-50%); z-index: 14; pointer-events: none;}
 .compare-range { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 20; opacity: 0; cursor: ew-resize; margin:0;}
-.panel-badge { position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%); z-index: 30; padding: 10px 20px; white-space: nowrap; font-weight: 700; }
+.panel-badge { position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%); z-index: 30; padding: 10px 20px; font-weight: 700; max-width: calc(100% - 24px); text-align: center; }
 
 /* Headings */
 h1 { font-family: var(--font-display); margin: 0; }
