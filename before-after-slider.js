@@ -31,6 +31,17 @@
       }
     }
 
+    function restartAuto() {
+      stopAuto();
+      autoEnabled = true;
+      lastTs = 0;
+      range.value = String(clamp(autoStart, min, max));
+      updateSplit();
+      rafId = requestAnimationFrame(autoTick);
+    }
+
+    document.addEventListener('olea:replay-compare', restartAuto);
+
     function autoTick(ts) {
       if (!autoEnabled) return;
       if (!lastTs) lastTs = ts;

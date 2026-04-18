@@ -169,6 +169,7 @@ if (langToggleBtn) {
   langToggleBtn.addEventListener('click', () => {
     const next = LANGS[(LANGS.indexOf(current) + 1) % LANGS.length];
     applyLang(next);
+    document.dispatchEvent(new CustomEvent('olea:replay-compare'));
   });
 }
 

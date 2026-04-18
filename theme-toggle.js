@@ -28,5 +28,6 @@
     currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
     localStorage.setItem(STORAGE_KEY, currentTheme);
     applyTheme(currentTheme);
+    document.dispatchEvent(new CustomEvent('olea:replay-compare'));
   });
 })();
