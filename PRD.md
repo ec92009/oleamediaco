@@ -5,8 +5,8 @@
 - Status: Draft
 - Product: Olea Media Co website
 - Platform: Static marketing site on GitHub Pages, with a future path to production CMS or custom site
-- Current preview: `https://ec92009.github.io/Codex/oleamediaco/`
-- Local workspace: `~/Codex/web/github.io/oleamediaco`
+- Current preview: `https://ec92009.github.io/oleamediaco/`
+- Local workspace: `~/Dev/oleamediaco`
 
 ## 1. Product Summary
 

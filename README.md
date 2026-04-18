@@ -17,11 +17,11 @@ Do not edit Olea Tax Co files from this project thread.
 ## Local Preview
 
 ```bash
-cd /Users/rookcohen/Codex/web/github.io
+cd ~/Dev/oleamediaco
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000/oleamediaco/`.
+Open `http://localhost:8000/`.
 
 ## PDF Source Workflow
 
@@ -35,12 +35,8 @@ Source files live under `source/`:
 
 If PDF content changes, regenerate PDFs from `source/` and keep the output files in this folder root so links stay valid.
 
-## Deployment
+## GitHub
 
-GitHub Pages deploy is handled by:
+- `origin`: `https://github.com/ec92009/oleamediaco.git`
 
-- `/Users/rookcohen/Codex/.github/workflows/deploy-oleamediaco-site.yml`
-
-This workflow publishes this folder to:
-
-- `https://ec92009.github.io/Codex/oleamediaco/`
+Local workspace: `~/Dev/oleamediaco`
